@@ -1,0 +1,156 @@
+// Tom Tom
+@import "@tomtom-international/web-sdk-maps";
+@import "@tomtom-international/web-sdk-plugin-searchbox";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.nav-item {
+    a {
+        font-size: 1.0rem;
+    }
+    &.active {
+        border-bottom: 3px solid $green;
+    }
+}
+
+#map {
+    height: 500px;
+}
+
+%coverimage {
+    min-height: 100vh;
+    background-size: cover;
+}
+
+#homepicture {
+    @extend %coverimage;
+    background-image: url('/assets/images/boolbnb-home-hd.jpg');
+}
+
+#error-picture {
+    @extend %coverimage;
+    background-image: url('/assets/images/boolbnb-home-hd-404.jpg');
+}
+
+#homeLeftBox {
+    padding-top: 10%;
+    .card {
+        padding: 30px;
+    }
+    h6 {
+        margin-top: 20px;
+    }
+}
+
+#home-not-sponsored, #home-sponsored, #find-results {
+    .card {
+        transition: transform .5s;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+    .card-img {
+    object-fit: cover;
+    height: 180px;
+    }
+    .card-title {
+        height: 45px;
+    }
+}
+
+// fascia per le card sponsorizzate
+img.sponsortag {
+    position: absolute;
+    width: 85px;
+    bottom: 0;
+    right: 0;
+}
+
+#dashboard-index {
+    .card-img {
+        height: 220px;
+    }
+}
+
+#show-details {
+    .card-img {
+        height: 280px;
+    }
+}
+
+#map {
+    min-height: 100%;
+}
+
+#dashboard-index, #upr-msg {
+    .card {
+        background-color: $light-grey;
+    }
+}
+
+//  serie di 3 fix per posizionare la address input di tomtom
+.tt-search-box-input-container {
+    border-radius: 5px;
+}
+
+.tt-address-label {
+    padding-top: 12px;
+}
+
+.tt-search-box {
+    margin-top: 0;
+}
+
+// stile per il footer
+footer {
+    a {
+        color: $dark-grey;
+        &:hover {
+            color: $green;
+            text-decoration: none;
+        }
+    }
+    img {
+        width: 40px;
+    }
+}
+
+// Page 404
+#errore {
+    h1 {
+        font-size: 110px;
+    }
+    i.fas {
+        color: $red;
+    }
+}
+
+// Stile per la about_us:
+
+.about_us {
+    .card {
+        transition: transform .5s;
+        &:hover {
+            transform: rotate(-2deg) scale(1.05);
+            box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
+            cursor: pointer;
+        }
+    }
+}
+
+// Popup mappe
+.mapboxgl-popup-content {
+    border-radius: 5px;
+    strong {
+        text-transform: uppercase;
+        color: rgb(56,193,114);
+    }
+}
