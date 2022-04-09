@@ -27,7 +27,7 @@
         "@tomtom-international/web-sdk-maps": "^5.49.1",
         "@tomtom-international/web-sdk-plugin-searchbox": "^2.1.0",
         "@tomtom-international/web-sdk-services": "^5.49.1",
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "sweetalert2": "^9.10.7"
     }
 }
